@@ -98,10 +98,6 @@ main {
   display: block;
   width: 195px;
   height: 195px;
-  background: url('../assets/img/Bitcoin.svg') center no-repeat;
-  /* background-image: url('../assets/img/Bitcoin.svg');
-  background-position: center;
-  background-repeat: no-repeat; */
   margin-bottom: 5rem;
 }
 .main-exchange-container__title {
