@@ -17,6 +17,7 @@ Convention:
   --grey: #BABABA;
   --off-white: #FAF8F7;
   --just-white: #FFFFFF;
+  --margin-center-table: calc(50% - calc(235px / 2));
 }
 * {
   box-sizing: border-box;
@@ -88,9 +89,6 @@ main {
 .main-exchange-container {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 6rem;
   text-align: center;
 }
@@ -98,7 +96,8 @@ main {
   display: block;
   width: 195px;
   height: 195px;
-  margin-bottom: 5rem;
+  background: url('https://svgshare.com/i/jNB.svg') center no-repeat;
+  margin: 0 auto 5rem auto;
 }
 .main-exchange-container__title {
   width: 90%;
@@ -117,15 +116,28 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+.main-exchange-container__table {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.main-exchange-container__table::-webkit-scrollbar {
+  display: none;
+}
 .main-table,
 .second-table {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 23.5rem;
+  margin: 0 auto;
 }
 .main-exchange-container__table h3 {
   align-self: flex-start;
-  padding: 2.5rem 0 1.3rem 1.3rem;
+  padding: 2.5rem 0 1.3rem 3.3rem;
   font-size: 1.8rem;
   color: #FF9536;
 }
@@ -203,3 +215,14 @@ main {
   margin-left: .5rem;
   background: url('../assets/icons/trending-up.svg') center/cover no-repeat;
 }
+.table__go--rigth {
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  right: -1rem;
+}
+.table__go--left {
+  right: auto;
+  left: -1rem;
+  transform: rotate(180deg);
+}
+
