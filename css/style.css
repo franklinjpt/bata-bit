@@ -96,7 +96,7 @@ main {
   display: block;
   width: 195px;
   height: 195px;
-  background: url('https://svgshare.com/i/jNB.svg') center no-repeat;
+  /* background: url('../assets/img/Bitcoin.svg') center no-repeat; */
   margin: 0 auto 5rem auto;
 }
 .main-exchange-container__title {
