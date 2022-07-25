@@ -8,9 +8,6 @@
   display: none;
 }
 .product-detail__container {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
   display: grid;
   grid-template-columns: auto auto;
   width: 60rem;
