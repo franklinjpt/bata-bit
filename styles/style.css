@@ -369,7 +369,11 @@ main {
   padding: 0 2rem;
 }
 .plans-container__slider::-webkit-scrollbar {
-  display: none;
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+.plans-container__slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
 }
 .plans-container__card {
   position: relative;
