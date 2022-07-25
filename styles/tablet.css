@@ -1,0 +1,30 @@
+.main-exchange-container__table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table__go--left,
+.table__go--rigth {
+  display: none;
+}
+.product-detail__container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 60rem;
+  margin: 0 auto;
+}
+.product-detail__container .product-detail__card {
+  justify-self: center;
+  margin: 1rem;
+}
+.plans-container__slider {
+  overflow: hidden;
+  width: 76.8rem;
+  margin: 0 auto
+}
+footer section picture img{
+  width: 65%;
+}

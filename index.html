@@ -9,8 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 768px)">
 </head>
 <body>
   <header>
@@ -30,7 +31,7 @@
       </div>
       <section class="main-exchange-container__table">
         <div id="table1">
-          <div class="main-table" >
+          <div class="main-table table-container" >
             <h3>Monedas</h3>
             <div class="table">
               <div class="table__item table__item--name">Bitcoin</div>
@@ -42,14 +43,12 @@
               <div class="table__item table__item--name">Stellar</div>
               <div class="table__item table__item--price">$ 4.96 <span class="down"></span></div>
             </div>
-            <a href="#table2" class="table__go--rigth">
-              <img src="./assets/icons/right-arrow.svg" alt="rigth arrow">
-            </a>
+            <span id="black-rigth-arrow" class="table__go--rigth"></span>
             <p><span>Actualizado:</span>19 Julio 23:48</p>
           </div>
         </div>
         <div id="table2">
-          <div class="second-table" >
+          <div class="second-table table-container">
             <h3>Comisiones</h3>
             <div class="table">
               <div class="table__item table__item--name">Bitrade</div>
@@ -61,9 +60,7 @@
               <div class="table__item table__item--name">Coinext</div>
               <div class="table__item table__item--price">$ 14.96</div>
             </div>
-            <a href="#table1" class="table__go--rigth table__go--left">
-              <img src="./assets/icons/right-arrow.svg" alt="left arrow">
-            </a>
+            <span id="black-left-arrow" class="table__go--left"></span>
             <p><span>Actualizado:</span>19 Julio 23:48</p>
           </div>
         </div>
@@ -154,10 +151,12 @@
       </ul>
     </section>
     <section>
-      <figure>
+      <picture>
+        <source srcset="./assets/img/logo-footer-ipad.svg" media="(min-width: 768px)">
         <img src="./assets/img/logo-footer.svg" alt="Logo batata bit 2020">
-      </figure>
+      </picture>
     </section>
   </footer>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
