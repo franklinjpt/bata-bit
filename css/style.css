@@ -226,7 +226,7 @@ main {
   left: -1rem;
   transform: rotate(180deg);
 }
-/*------------------------------------------------------*/
+/*-----------------------PRODUC DETAIL--------------------------*/
 .main-product-detail{
   position: relative;
   background-color: var(--warm-black);
@@ -288,6 +288,24 @@ main {
 }
 .product-detail__card:last-child {
   margin: 0 auto;
+}
+/*----------------------ICONOS------------------------------*/
+.icon {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.clock {
+  background: url('../assets/icons/clock.svg') center/cover no-repeat;
+}
+.eye {
+  background: url('../assets/icons/eye.svg') center/cover no-repeat;
+}
+.dollar {
+  background: url('../assets/icons/dollar-sign.svg') center/cover no-repeat;
+}
+.check-circle {
+  background: url('../assets/icons/check-circle.svg') center/cover no-repeat;
 }
 /*---------------------BITCOIN-IMAGE-------------------------------*/
 .bitcoin-img-container {
@@ -438,22 +456,22 @@ main {
 .life {
   left: calc(50% - 52px);
 }
-
-/*----------------------ICONOS------------------------------*/
-.icon {
+/*---------------------FOOTER-------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15rem;
+  background-color: var(--bitcoin-orange);
+}
+.footer-section__list {
+  list-style: none;
+}
+.footer-section__item a {
   display: inline-block;
-  width: 2.2rem;
-  height: 2.2rem;
-}
-.clock {
-  background: url('../assets/icons/clock.svg') center/cover no-repeat;
-}
-.eye {
-  background: url('../assets/icons/eye.svg') center/cover no-repeat;
-}
-.dollar {
-  background: url('../assets/icons/dollar-sign.svg') center/cover no-repeat;
-}
-.check-circle {
-  background: url('../assets/icons/check-circle.svg') center/cover no-repeat;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: var(--just-white);
 }
