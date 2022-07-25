@@ -27,6 +27,7 @@ Convention:
 html {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 header {
   position: relative;
@@ -96,7 +97,7 @@ main {
   display: block;
   width: 195px;
   height: 195px;
-  background: url('https://i.postimg.cc/KjTKbRNW/Bitcoin.png') center no-repeat;
+  background: url('../assets/img/Bitcoin.svg') center no-repeat;
   margin: 0 auto 5rem auto;
 }
 .main-exchange-container__title {
@@ -121,7 +122,6 @@ main {
   grid-auto-flow: column;
   grid-auto-columns: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 .main-exchange-container__table::-webkit-scrollbar {
   display: none;
@@ -289,6 +289,139 @@ main {
 .product-detail__card:last-child {
   margin: 0 auto;
 }
+/*---------------------BITCOIN-IMAGE-------------------------------*/
+.bitcoin-img-container {
+  width: 100%;
+  height: 60vh;
+  background: url('../assets/img/bitcoinbaby2x.jpg') center/cover no-repeat;
+}
+.bitcoin-img-container h2 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+/*---------------------PLANS-------------------------------*/
+.main-plans-container__title {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem 0 4rem 0; ;
+  text-align: center;
+}
+.main-plans-container__title h2{
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.main-plans-container__title p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #808080;
+}
+.plans-container__card {
+  position: relative;
+  width: 19rem;
+  height: 24.7rem;
+  margin: 0 auto 2rem auto;
+  border-radius: 8px;
+  background-color: var(--just-white);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container__card-type {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.452rem;
+  border-radius: 8px;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+}
+.plan-basic{
+  background-color: var(--secondary-blue);
+}
+.plan-lifetime {
+  background-color: rgb(155, 35, 155);
+}
+.plans-container__card .plan-basic--button {
+  border: 2px solid var(--secondary-blue);
+}
+.plans-container__card .plan-lifetime--button {
+  border: 2px solid rgb(155, 35, 155);
+}
+.plans-container__card-info{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  align-items: center;
+}
+.plans-container__card-info h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.plans-container__card-info p:nth-child(2) {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 6.293rem;
+  letter-spacing: -0.08em;
+}
+.plans-container__card-info p:nth-child(3) {
+  font-size: 1.2rem;
+  line-height: 1.452rem;
+  text-align: center;
+  color: #757575;
+}
+.plans-container__card-info button {
+  display: flex;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.823rem;
+  font-weight: 700;
+  color: var(--warm-black);
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  background-color: var(--off-white);
+}
+.plans-container__card-info button span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: .5rem;
+  background: url('../assets/icons/orange-right-arrow.svg') center/cover no-repeat;
+}
+.plans-container__card-info .plan-basic--button-icon{
+  background: url('../assets/icons/blue-right-arrow.svg') center/cover no-repeat;
+}
+.plans-container__card-info .plan-lifetime--button-icon{
+  background: url('../assets/icons/purple-right-arrow.svg') center/cover no-repeat;
+}
+.dollar--sup {
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 40px);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.452rem;
+}
+.month{
+  left: calc(50% - 35px);
+}
+.life {
+  left: calc(50% - 52px);
+}
+
 /*----------------------ICONOS------------------------------*/
 .icon {
   display: inline-block;
