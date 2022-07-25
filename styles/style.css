@@ -41,6 +41,8 @@ header {
   background: var(--linear-bg);
 }
 header img {
+  width: 151px;
+  height: 24px;
   margin-top: 40px;
 }
 .header__title-container {
@@ -115,7 +117,7 @@ main {
   margin-bottom: 2.5rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  color: #757575;
+  color: #707070;
 }
 .main-exchange-container__table {
   display: grid;
@@ -168,13 +170,13 @@ main {
   font-weight: 500;
   letter-spacing: -0.02em;
   text-align: left;
-  color: #B5B0AC;
+  color: #2F2E2D;
 }
 .table .table__item--price {
   font-size: 1.4rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #757575;
+  color: #2b2b2b;
 }
 .table .table__item:first-child {
   border-radius: 8px 0 0 0;
@@ -272,7 +274,7 @@ main {
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin-bottom: 2.5rem;
-  color: #808080
+  color: #909090
 }
 .product-detail__container {
   padding-bottom: 4rem
@@ -328,7 +330,7 @@ main {
 .bitcoin-img-container {
   width: 100%;
   height: 60vh;
-  background: url('../assets/img/bitcoinbaby2x.jpg') center/cover no-repeat;
+  background: url('../assets/img/bitcoinbaby.png') center/cover no-repeat;
 }
 .bitcoin-img-container h2 {
   padding-top: 5rem;
@@ -356,7 +358,7 @@ main {
 .main-plans-container__title p {
   font-size: 1.4rem;
   line-height: 1.8rem;
-  color: #808080;
+  color: #707070;
 }
 .plans-container__slider {
   display: grid;
@@ -437,7 +439,7 @@ main {
   font-size: 1.2rem;
   line-height: 1.452rem;
   text-align: center;
-  color: #757575;
+  color: #707070;
 }
 .plans-container__card-info button {
   display: flex;
