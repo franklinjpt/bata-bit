@@ -17,7 +17,6 @@ Convention:
   --grey: #BABABA;
   --off-white: #FAF8F7;
   --just-white: #FFFFFF;
-  --margin-center-table: calc(50% - calc(235px / 2));
 }
 * {
   box-sizing: border-box;
@@ -123,9 +122,7 @@ main {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 .main-exchange-container__table::-webkit-scrollbar {
